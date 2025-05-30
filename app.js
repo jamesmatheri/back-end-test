@@ -3,6 +3,7 @@ const cors = require('cors');
 const path = require("node:path");
 const session = require("express-session");
 const passport = require("passport");
+require('dotenv').config()
 
 
 
