@@ -6,6 +6,7 @@ const pool = require('../db/pool')
 
 exports.user_authenticate_post = async (req, res, next) => {
     const {mail,password } = req.body;
+    console.log(mail,password)
     const { rows } = await pool.query("SELECT * FROM users WHERE email = $1", [mail]);
           const user = rows[0];
          
